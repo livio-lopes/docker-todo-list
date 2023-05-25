@@ -3,7 +3,7 @@ EXPOSE 3001
 WORKDIR /app/back-end
 ADD node_modules.tar.gz .
 COPY . /app/back-end
-RUN npm install
+# RUN npm install
 ENTRYPOINT ["npm"]
 CMD ["start"]
 
